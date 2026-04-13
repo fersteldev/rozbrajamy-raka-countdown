@@ -16,9 +16,8 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 
 ![Status](https://img.shields.io/badge/status-active-00c853?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
-![Maintained](https://img.shields.io/badge/maintained-yes-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)
-![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge)
+
 
 ---
 
