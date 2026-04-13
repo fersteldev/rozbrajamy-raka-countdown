@@ -60,17 +60,6 @@ This widget works only on forums that:
 * 📱 Responsive design
 * 🎯 Easy to embed in forum sidebar (CUSTOM TXT / HTML widget)
 * 🎨 Clean UI
-* ⚡ Lightweight (no dependencies)
-
----
-
-## 🔧 Configuration
-
-![Config](https://img.shields.io/badge/config-editable-blue?style=flat-square)
-
-```js
-const targetDate = new Date("2025-01-01T20:00:00");
-```
 
 ---
 
