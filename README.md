@@ -1,6 +1,10 @@
 # rozbrajamy-raka-countdown
 
-Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initiative.
+Minimal countdown widget for a CS 1.6 charity tournament – Rozbrajamy Raka initiative.
+
+This project is intended for **CS 1.6 forum administrators** who want to embed a live countdown in their **sidebar using a CUSTOM TXT / HTML widget plugin**.
+
+The goal is to provide a simple, plug-and-play countdown that can be added without any backend setup.
 
 ---
 
@@ -15,9 +19,8 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 ## 📊 Project Info
 
 ![Status](https://img.shields.io/badge/status-active-00c853?style=for-the-badge)
-![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.0.1-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)
-
 
 ---
 
@@ -44,8 +47,9 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 
 * ⏱️ Real-time countdown
 * 📱 Responsive design
-* 🎯 Easy configuration
+* 🎯 Easy to embed in forum sidebar (CUSTOM TXT / HTML widget)
 * 🎨 Clean UI
+* ⚡ Lightweight (no dependencies)
 
 ---
 
