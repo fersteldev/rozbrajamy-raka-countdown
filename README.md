@@ -6,8 +6,8 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 
 ## 🛠️ Tech Stack
 
-![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
 ---
@@ -67,7 +67,6 @@ const targetDate = new Date("2025-01-01T20:00:00");
 📦 project
  ┣ 📜 index.html
  ┣ 📜 README.md
- ┗ 📂 assets
 ```
 
 ---
