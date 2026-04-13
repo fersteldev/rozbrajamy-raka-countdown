@@ -65,7 +65,7 @@ const targetDate = new Date("2025-01-01T20:00:00");
 
 ```
 📦 project
- ┣ 📜 index.html
+ ┣ 📜 countdown-widget
  ┣ 📜 README.md
 ```
 
