@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rozbrajamy Raka – Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+<div style="max-width:300px;padding:15px;
+            font-family:Arial,Helvetica,sans-serif;
+            color:#ffffff;text-align:center;">
+
+    <div style="margin-bottom:14px;">
+        <img src="https://rozbrajamyraka.pl/assets/raczek-CEbbCRqw.png"
+             alt="Rozbrajamy Raka"
+             style="max-width:170px;height:auto;">
+    </div>
+
+    <div style="font-size:14px;line-height:1.6;margin-bottom:18px;">
+        <b>Rozbrajamy Raka</b> wspiera osoby chore 
+        onkologicznie, organizuje zbiórki i promuje profilaktykę.
+        <br><br>
+        Charytatywny turniej Counter-Strike 1.6 - gramy na rzecz
+        Fundacji Krwinka i dzieci w chorobie nowotworowej.
+    </div>
+
+    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:20px;">
+
+        <div style="background:rgba(255,255,255,0.08);
+                    padding:10px 6px;
+                    border-radius:10px;
+                    width:60px;">
+            <div id="days" style="font-size:22px;font-weight:700;">00</div>
+            <div style="font-size:11px;opacity:0.8;">DNI</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.08);
+                    padding:10px 6px;
+                    border-radius:10px;
+                    width:60px;">
+            <div id="hours" style="font-size:22px;font-weight:700;">00</div>
+            <div style="font-size:11px;opacity:0.8;">GODZ</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.08);
+                    padding:10px 6px;
+                    border-radius:10px;
+                    width:60px;">
+            <div id="mins" style="font-size:22px;font-weight:700;">00</div>
+            <div style="font-size:11px;opacity:0.8;">MIN</div>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.08);
+                    padding:10px 6px;
+                    border-radius:10px;
+                    width:60px;">
+            <div id="secs" style="font-size:22px;font-weight:700;">00</div>
+            <div style="font-size:11px;opacity:0.8;">SEK</div>
+        </div>
+
+    </div>
+
+    <div style="display:flex;gap:10px;margin-bottom:10px;">
+
+        <a href="https://rozbrajamyraka.pl" target="_blank"
+           style="flex:1;text-decoration:none;
+                  background:linear-gradient(90deg,#ff1744,#d50000);
+                  padding:9px 0;
+                  border-radius:10px;
+                  font-size:11px;
+                  font-weight:700;
+                  letter-spacing:1px;
+                  text-transform:uppercase;
+                  display:inline-block;
+                  box-shadow:0 6px 18px rgba(213,0,0,0.35);
+                  color:#ffffff;">
+            OPIS
+        </a>
+
+        <a href="mailto:kontakt@rozbrajamyraka.pl"
+           style="flex:1;text-decoration:none;
+                  background:linear-gradient(90deg,#ff1744,#d50000);
+                  padding:9px 0;
+                  border-radius:10px;
+                  font-size:11px;
+                  font-weight:700;
+                  letter-spacing:1px;
+                  text-transform:uppercase;
+                  display:inline-block;
+                  box-shadow:0 6px 18px rgba(213,0,0,0.35);
+                  color:#ffffff;">
+            KONTAKT
+        </a>
+
+    </div>
+
+    <a href="https://effexo.net/ranking/teams" target="_blank"
+       style="display:block;text-decoration:none;
+              background:linear-gradient(90deg,#ff1744,#b71c1c);
+              padding:11px 0;
+              border-radius:12px;
+              font-size:12px;
+              font-weight:800;
+              letter-spacing:1.2px;
+              text-transform:uppercase;
+              box-shadow:0 8px 22px rgba(183,28,28,0.45);
+              color:#ffffff;">
+        ZAPISZ SIĘ
+    </a>
+
+    <div style="margin-top:20px;font-size:12px;line-height:1.6;">
+
+        <div>
+            Stworzone przez
+            <i class="fas fa-code" style="color:#e3066f;margin:0 4px;"></i> 
+            <a href="https://fersteldev.pl"
+               style="font-weight:600;color:white;text-decoration:none;">
+               ferstel
+            </a>
+        </div>
+
+        <div>
+            dla 
+            <i class="fas fa-heart" style="color:#e3066f;margin:0 4px;"></i> 
+            <a href="https://rozbrajamyraka.pl"
+               style="font-weight:600;color:white;text-decoration:none;">
+               RozbrajamyRaka.pl
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+const now = new Date();
+const currentYear = now.getFullYear();
+let endTime = new Date(currentYear, 5, 26, 18, 0, 0);
+
+if (now > endTime) {
+    endTime = new Date(currentYear + 1, 5, 26, 18, 0, 0);
+}
+
+function updateCountdown() {
+    const now = new Date();
+    let diff = endTime - now;
+
+    if (diff < 0) diff = 0;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("days").innerText = String(days).padStart(2, "0");
+    document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+    document.getElementById("mins").innerText = String(mins).padStart(2, "0");
+    document.getElementById("secs").innerText = String(secs).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
