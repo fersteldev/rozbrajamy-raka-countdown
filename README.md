@@ -2,7 +2,9 @@
 
 Minimal countdown widget for a CS 1.6 charity tournament – Rozbrajamy Raka initiative.
 
-This project is intended for **CS 1.6 forum administrators** who want to embed a live countdown in their **sidebar using a CUSTOM TXT / HTML widget plugin**.
+This project is intended for CS 1.6 forum administrators who want to embed a live countdown in their sidebar using a CUSTOM TXT / HTML widget plugin.
+
+It is designed specifically for forums based on the **Invision Community (IPS) engine**, where administrators can add custom HTML/JS widgets in sidebar blocks.
 
 The goal is to provide a simple, plug-and-play countdown that can be added without any backend setup.
 
@@ -13,6 +15,15 @@ The goal is to provide a simple, plug-and-play countdown that can be added witho
 ![HTML](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+
+---
+
+## ⚠️ Requirements
+
+This widget works only on forums that:
+
+- run on **Invision Community (IPS)**
+- allow custom HTML / JavaScript in sidebar widgets (CUSTOM TXT / HTML blocks)
 
 ---
 
