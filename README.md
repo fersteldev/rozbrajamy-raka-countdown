@@ -39,8 +39,8 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 
 ![Realtime](https://img.shields.io/badge/realtime-yes-success?style=flat-square)
 ![Responsive](https://img.shields.io/badge/responsive-yes-blue?style=flat-square)
-![Dependencies](https://img.shields.io/badge/dependencies-none-lightgrey?style=flat-square)
 ![Performance](https://img.shields.io/badge/performance-fast-brightgreen?style=flat-square)
+![Configuration](https://img.shields.io/badge/configuration-easy-red?style=flat-square)
 
 * ⏱️ Real-time countdown
 * 📱 Responsive design
