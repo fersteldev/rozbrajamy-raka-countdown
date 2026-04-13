@@ -25,7 +25,7 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 
 ![Demo](https://img.shields.io/badge/demo-live-blue?style=for-the-badge\&logo=vercel)
 
-👉 [https://twoja-strona.pl/countdown](https://fersteldev.pl/rozbrajamy-raka-countdown.html)
+👉 https://fersteldev.pl/rozbrajamy-raka-countdown.html
 
 ---
 
