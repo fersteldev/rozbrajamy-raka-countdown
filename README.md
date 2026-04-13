@@ -31,7 +31,7 @@ Minimal countdown widget for charity CS 1.6 tournament – Rozbrajamy Raka initi
 
 ## 📸 Preview
 
-![Preview](https://fersteldev.pl/countdowndemo.png))
+![Preview](https://fersteldev.pl/countdowndemo.png)
 
 ---
 
