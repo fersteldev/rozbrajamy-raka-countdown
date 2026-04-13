@@ -74,18 +74,6 @@ const targetDate = new Date("2025-01-01T20:00:00");
 
 ---
 
-## 📁 Project Structure
-
-![Structure](https://img.shields.io/badge/structure-simple-lightgrey?style=flat-square)
-
-```
-📦 project
- ┣ 📜 countdown-widget
- ┣ 📜 README.md
-```
-
----
-
 ## 👤 Author
 
 ![Author](https://img.shields.io/badge/author-fersteldev-blue?style=for-the-badge)
