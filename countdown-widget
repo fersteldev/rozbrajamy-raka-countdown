@@ -28,6 +28,32 @@
   50%{transform:scale(1.4);opacity:0.5}
   100%{transform:scale(1);opacity:1}
 }
+
+
+@keyframes shimmerMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.progress-shimmer {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:50%;
+  background:linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.25) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  animation: shimmerMove 2.5s infinite;
+}
+
 </style>
 
 <div style="max-width:300px;padding:15px;
@@ -35,7 +61,6 @@
             color:#ffffff;
             position:relative;">
 
-  
     <div class="live-badge">
         <div class="live-dot"></div>
         LIVE
@@ -89,6 +114,47 @@ Charytatywny turniej Counter-Strike 1.6 - gramy na rzecz Fundacji Krwinka i dzie
         </div>
 
     </div>
+
+<div style="margin-bottom:20px;width:100%;">
+
+    <div style="display:flex;
+                justify-content:space-between;
+                font-size:11px;
+                opacity:0.8;
+                margin-bottom:6px;">
+        <span>Postęp do 26 czerwca</span>
+        <span id="progressText">0%</span>
+    </div>
+
+    <div style="
+        width:100%;
+        height:12px;
+        background:rgba(255,255,255,0.08);
+        border-radius:12px;
+        overflow:hidden;
+        position:relative;
+    ">
+
+       <div id="progressBar"
+     style="
+        position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width:0%;
+        background:linear-gradient(90deg,#ff1744,#b71c1c);
+        transition:width 0.6s ease;
+        overflow:hidden;
+     ">
+
+    <div class="progress-shimmer"></div>
+
+</div>
+
+    </div>
+
+</div>
+
 
     <div style="display:flex;gap:10px;margin-bottom:10px;">
 
@@ -190,4 +256,32 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+function updateProgress() {
+
+    const now = new Date();
+
+    const startTime = new Date(now.getFullYear(), 0, 1); 
+    const eventTime = new Date(now.getFullYear(), 5, 26, 18, 0, 0);
+
+    if (now > eventTime) {
+        eventTime.setFullYear(eventTime.getFullYear() + 1);
+        startTime.setFullYear(startTime.getFullYear() + 1);
+    }
+
+    const totalTime = eventTime - startTime;
+    const passedTime = now - startTime;
+
+    let percent = (passedTime / totalTime) * 100;
+
+    if (percent < 0) percent = 0;
+    if (percent > 100) percent = 100;
+
+    document.getElementById("progressBar").style.width = percent + "%";
+    document.getElementById("progressText").innerText = percent.toFixed(1) + "%";
+}
+
+updateProgress();
+setInterval(updateProgress, 60000);
+
 </script>
