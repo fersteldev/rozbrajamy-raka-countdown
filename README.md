@@ -30,7 +30,7 @@ This widget works only on forums that:
 ## 📊 Project Info
 
 ![Status](https://img.shields.io/badge/status-active-00c853?style=for-the-badge)
-![Version](https://img.shields.io/badge/version-1.0.2-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.0.3-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)
 
 ---
@@ -45,7 +45,7 @@ This widget works only on forums that:
 
 ## 📸 Preview
 
-![Previev](https://fersteldev.pl/countdowndemos.png)
+![Previev](https://fersteldev.pl/countdowndemo3.png)
 
 ---
 
@@ -60,7 +60,8 @@ This widget works only on forums that:
 * 📱 Responsive design
 * 🎯 Easy to embed in forum sidebar (CUSTOM TXT / HTML widget)
 * 🎨 Clean UI
-* 🔴 Added LIVE dot indicator
+* 🔴 LIVE dot indicator
+* 📊 Animated progress bar
 
 ---
 
