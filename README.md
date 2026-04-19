@@ -1,6 +1,6 @@
 # rozbrajamy-raka-countdown
 
-Minimal countdown widget for a CS 1.6 charity tournament – Rozbrajamy Raka initiative.
+Minimal countdown widget for a CS 1.6 charity tournament - Rozbrajamy Raka initiative.
 
 This project is intended for CS 1.6 forum administrators who want to embed a live countdown in their sidebar using a CUSTOM TXT / HTML widget plugin.
 
